@@ -23,7 +23,7 @@ git rebase "origin/$GIT_BASE_REF"
 yarn bump --help >/dev/null 2>&1
 if [[ $? -ne 0 ]]; then
   echo "Download plugin from $PLUGIN_SOURCE..."
-  yarn plugin import "${PLUGIN_SOURCE}/releases/download/v${PLUGIN_VERSION}/plugin-bump_ubuntu-latest.js"
+  yarn plugin import "${PLUGIN_SOURCE}/releases/download/v${PLUGIN_VERSION}/plugin-bump.js"
 fi
 
 yarn bump $@
